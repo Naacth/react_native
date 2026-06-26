@@ -7,13 +7,13 @@ export const COLOR = {
     background: '#0D1117',
     text: '#E8E8E8',
     white: '#FFFFFF',
-    gradientStart: '#0D1117',
+    gradientStart: '#073780ff',
     gradientEnd: '#1C2A3A'
 }
 export const Colors = {
     primary: '#C9A84C',
     secondary: '#A0785A',
-    background: '#0D1117',
+    background: '#1a2a41ff',
     text: '#E8E8E8',
     white: '#FFFFFF',
     gradientStart: '#0D1117',
@@ -33,18 +33,18 @@ export const indexStyles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    imageFull:{
+    imageFull: {
         width: '100%',
         height: 400,
         borderRadius: 25,
     },
-    imageWrapper:{
+    imageWrapper: {
         width: '100%',
         borderRadius: 25,
         overflow: 'hidden',
         elevation: 15,
     },
-    card:{
+    card: {
         flex: 1,
         alignItems: "center",
         justifyContent: "flex-start",
@@ -56,7 +56,7 @@ export const indexStyles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        flexDirection : "column",
+        flexDirection: "column",
     },
     title: {
         fontSize: 27,
@@ -64,7 +64,7 @@ export const indexStyles = StyleSheet.create({
         color: Colors.primary,
         marginBottom: 4,
         textShadowColor: 'rgba(0,0,0,0.9)',
-        textShadowOffset: {width: 2, height: 2},
+        textShadowOffset: { width: 2, height: 2 },
         textShadowRadius: 8,
     },
     overlay: {
@@ -82,7 +82,7 @@ export const indexStyles = StyleSheet.create({
         color: Colors.white,
         fontSize: 13,
         textShadowColor: 'rgba(0,0,0,0.9)',
-        textShadowOffset: {width: 1, height: 1},
+        textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 6,
     },
 });
@@ -164,3 +164,6 @@ export const gradientButtonStyles = StyleSheet.create({
         textAlign: 'center',
     },
 });
+
+// Fix expo-router warning for non-route files in app folder
+export default function DummyColors() { return null; }
